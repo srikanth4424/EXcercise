@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VsoftService } from '../vsoft.service';
+import { PostService } from '../Post.service';
 import {  Router} from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import {  Router} from '@angular/router';
 export class ViewallComponent implements OnInit {
 
   emp:any = [{}];
-  constructor(private vs: VsoftService,private router: Router){}
+  constructor(private vs: PostService,private router: Router){}
   ngOnInit(){
     this.getEmployees();
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { VsoftService } from '../vsoft.service';
+import { PostService } from '../Post.service';
 
 @Component({
   selector: 'app-viewemployee',
@@ -9,7 +9,7 @@ import { VsoftService } from '../vsoft.service';
 export class ViewemployeeComponent implements OnInit {
   singleEmployee:any = [{}];
   empData:any = [{}];
-  constructor(private vs: VsoftService,) { 
+  constructor(private vs: PostService,) { 
     
   }
 

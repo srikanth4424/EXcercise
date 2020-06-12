@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 // importing service
-import { VsoftService } from './vsoft.service';
+import { PostService } from './Post.service';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ViewallComponent } from './viewall/viewall.component';
@@ -22,7 +22,7 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [VsoftService],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

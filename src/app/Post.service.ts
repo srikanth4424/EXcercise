@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class VsoftService {
+export class PostService {
 
   constructor(private http: HttpClient) { }
   getAllEmployees():Observable<any>{
