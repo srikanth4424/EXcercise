@@ -1,0 +1,23 @@
+<button class="btn btn-danger float-right" routerLink="">Logout</button>
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <!-- <th scope="col">Id</th> -->
+          <th scope="col">Title</th>
+          <th scope="col">Body</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let em of emp,let i=index'>
+          <th scope="row">{{i+1}}</th>
+          <!-- <td>{{em.id}}</td> -->
+          <td>{{em.title}}</td>
+          <td>{{em.body}}</td>
+          <td><button class="btn btn-danger" (click)="viewEmployee(em.id)" >View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
