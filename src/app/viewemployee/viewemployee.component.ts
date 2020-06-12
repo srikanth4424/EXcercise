@@ -9,13 +9,16 @@ import { PostService } from '../Post.service';
 export class ViewemployeeComponent implements OnInit {
   singleEmployee:any = [{}];
   empData:any = [{}];
+  // num1= ((document.getElementById("uid") as HTMLInputElement).value);
+  // num2= ((document.getElementById("title") as HTMLInputElement).value);
+  // num3= ((document.getElementById("body") as HTMLInputElement).value);
   constructor(private vs: PostService,) { 
     
   }
 
   ngOnInit() {
-    this.viewEmp();  
-    
+    this.viewEmp(); 
+    // this.updatePost();
   }
   viewEmp(){
     var eid = window.sessionStorage.getItem('editEmpId');
@@ -29,4 +32,14 @@ export class ViewemployeeComponent implements OnInit {
     });
   }
 
+  // updatePost( ) {
+  //   let post= {
+  //     "id" : this.num1,
+  //     "title" : this.num2,
+  //     "body" : this.num3
+  //   }  
+  //   this.vs.updatePost(post)  
+  //     .subscribe(response => {  
+  //     });  
+  // }  
 }

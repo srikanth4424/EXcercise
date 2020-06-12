@@ -1,4 +1,6 @@
 <button class="btn btn-danger float-right" routerLink="">Logout</button>
+<button class="btn btn-danger float-left" routerLink="/addpost">AddPost</button>
+
 <div class="table-responsive">
     <table class="table">
       <thead>
@@ -16,7 +18,8 @@
           <!-- <td>{{em.id}}</td> -->
           <td>{{em.title}}</td>
           <td>{{em.body}}</td>
-          <td><button class="btn btn-danger" (click)="viewEmployee(em.id)" >View</button></td>
+          <td><button class="btn btn-primary" (click)="viewEmployee(em.id)" >View</button></td>
+          <td><button class="btn btn-danger" (click)="deleteEmployee(em.id)" >View</button></td>
         </tr>
       </tbody>
     </table>

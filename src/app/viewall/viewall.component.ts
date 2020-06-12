@@ -24,5 +24,5 @@ export class ViewallComponent implements OnInit {
     window.sessionStorage.setItem('editEmpId',index);
     this.router.navigateByUrl('viewEmployee');
   }
-
+  
 }

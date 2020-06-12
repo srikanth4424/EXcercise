@@ -1,0 +1,34 @@
+<!-- <h1>Please type in new item data:</h1><br>
+  <label class="add_label"><b>&nbsp;userId:&nbsp; </b></label>
+  <input type="number" class="add_input" id="new_userId" name="new_userId" value="">
+  <br>
+  <label class="add_label"><b>&nbsp;title:&nbsp;</b></label>
+  <input type="text" class="add_input" id="new_title" name="new_title" value="">
+  <br>
+  <label class="add_label"><b>&nbsp;body:&nbsp;</b></label>
+  <input type="text" class="add_input" id="new_body" name="new_body" value="">
+
+  <button id="add_btn2" onclick="New()">Submit</button>
+
+  <form > -->
+ 
+<form [formGroup]="addPost" (ngSubmit)="addPostData()">
+<div class="form-group">
+	<label for="userId">User ID</label>
+	<input id="usernId" formControlName="userId" type="number" class="form-control" name="userId">
+</div>
+
+<div class="form-group">
+	<label for="title">Title</label>
+	<input id="title" formControlName="title" type="tezt" class="form-control" name="title">
+</div>
+
+<div class="form-group">
+	<label for="body">Body</label>
+	<input id="body" formControlName="body" type="text" class="form-control" name="body">
+</div>
+
+<div class="form-group">
+	<button type="submit" [disabled]="!addPost.valid" class="btn btn-success">Submit</button>
+</div>
+</form>
